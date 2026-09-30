@@ -33,6 +33,9 @@ public class Main {
 		System.out
 				.println("Cuál fue el porcentaje de IVA que te han cobrado (Recuerda el minimo es 0% y el máximo 25%)");
 		int porcentajeIVA = teclado.nextInt();
+
+		teclado.close();
+
 		float ivaOperacion = porcentajeIVA / 100.0f;
 
 		float compraSinIva;

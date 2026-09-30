@@ -24,7 +24,9 @@ public class Main {
 
 		System.out.println("Cuántos bocadillos desean consumir");
 		int cantidadBocadillos = teclado.nextInt();
-
+		
+		teclado.close();
+		
 		// Calculo Factura Final.
 
 		float precioFinalBebidas = cantidadBebidas * COSTE_BEBIDAS;

@@ -23,7 +23,6 @@ public class Main {
 
 		final int SEGUNDOS_EN_HORA = 3600;
 		final int MINUTOS_EN_HORA = 60;
-		final int SEGUNDOS_EN_MINUTO = 60;
 
 		// Hora
 		int horas = SEGUNDOS_TOTALES / SEGUNDOS_EN_HORA;
