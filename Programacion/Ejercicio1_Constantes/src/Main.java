@@ -13,23 +13,23 @@ public class Main {
 		 */
 
 		// Nombre Completo
-		final String nombreCompleto = "Yorwin José Rosales Castellanos";
+		final String NOMBRE_COMPLETO = "Yorwin José Rosales Castellanos";
 
 		// Direccion
-		final String calle = "C/ Gran Vía";
-		final int nroPortal = 24;
-		final int piso = 3;
-		final char letraPiso = 'B';
-		final int codigoPostal = 28801;
-		final String localidad = "Alcalá de Henares";
-		final String provincia = "Madrid";
-		final String pais = "España";
+		final String CALLE = "C/ Gran Vía";
+		final int NROPORTAL = 24;
+		final int PISO = 3;
+		final char LETRA_PISO = 'B';
+		final int CODIGO_POSTAL = 28801;
+		final String LOCALIDAD = "Alcalá de Henares";
+		final String PROVINCIA = "Madrid";
+		final String PAIS = "España";
 
 		// Salida de Datos.
-		System.out.printf("%s \n", nombreCompleto);
-		System.out.printf("%s nº%d, %dº%s \n", calle, nroPortal, piso, letraPiso);
-		System.out.printf("%d %s, %s \n", codigoPostal, localidad, provincia);
-		System.out.printf("%s", pais);
+		System.out.printf("%s \n", NOMBRE_COMPLETO);
+		System.out.printf("%s nº%d, %dº%s \n", CALLE, NROPORTAL, PISO, LETRA_PISO);
+		System.out.printf("%d %s, %s \n", CODIGO_POSTAL, LOCALIDAD, PROVINCIA);
+		System.out.printf("%s", PAIS);
 	}
 
 }

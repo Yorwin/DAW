@@ -13,8 +13,8 @@ public class Main {
 		 * bebidas: 3.75 Coste de los bocadillos: 10.25 Coste consumición: 14.0
 		 */
 
-		final float costeBebidas = 1.25f;
-		final float costeBocadillos = 2.05f;
+		final float COSTE_BEBIDAS = 1.25f;
+		final float COSTE_BOCADILLOS = 2.05f;
 
 		// Camarero
 		Scanner teclado = new Scanner(System.in);
@@ -27,8 +27,8 @@ public class Main {
 
 		// Calculo Factura Final.
 
-		float precioFinalBebidas = cantidadBebidas * costeBebidas;
-		float precioFinalBocadillos = cantidadBocadillos * costeBocadillos;
+		float precioFinalBebidas = cantidadBebidas * COSTE_BEBIDAS;
+		float precioFinalBocadillos = cantidadBocadillos * COSTE_BOCADILLOS;
 		float totalFactura = precioFinalBebidas + precioFinalBocadillos;
 
 		System.out.println("Número de bebidas: " + cantidadBebidas);
