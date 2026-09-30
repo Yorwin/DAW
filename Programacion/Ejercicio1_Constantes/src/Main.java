@@ -26,7 +26,6 @@ public class Main {
 		final String pais = "España";
 
 		// Salida de Datos.
-		System.out.println("ENTRADA/SALIDA");
 		System.out.printf("%s \n", nombreCompleto);
 		System.out.printf("%s nº%d, %dº%s \n", calle, nroPortal, piso, letraPiso);
 		System.out.printf("%d %s, %s \n", codigoPostal, localidad, provincia);
