@@ -26,8 +26,6 @@ public class Main {
 		System.out.println("Indica una unidad");
 		int unidades = teclado.nextInt();
 
-		teclado.close();
-
 		String decenasDeMilString = String.valueOf(decenasDeMil);
 		String unidadesDeMilString = String.valueOf(unidadesDeMil);
 		String centenasString = String.valueOf(centenas);
@@ -45,6 +43,22 @@ public class Main {
 
 		System.out.println("Número introducido: " + nroCompleto);
 
+		// Obteniendo el nro. completo por parte del usuario.
+
+		System.out.println("Indica un nro. completo con una longitud máxima de 5 nros.");
+		int nroCompletoUsuario = teclado.nextInt();
+
+		decenasDeMil = nroCompletoUsuario / 10000;
+		unidadesDeMil = (nroCompletoUsuario % 10000) / 1000;
+		centenas = ((nroCompletoUsuario % 10000) % 1000) / 100;
+		decenas = (((nroCompletoUsuario % 10000) % 1000) % 100) / 10;
+		unidades = (((nroCompletoUsuario % 10000) % 1000) % 100) % 10;
+
+		System.out.printf(
+				"El nro. se divide en: \nDecenas de Mil: %d\nUnidades De Mil: %d \nCentenas: %d \nDecenas: %d \nUnidades: %d",
+				decenasDeMil, unidadesDeMil, centenas, decenas, unidades);
+
+		teclado.close();
 	}
 
 }

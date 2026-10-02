@@ -15,17 +15,17 @@ public class Main {
 		 */
 
 		Scanner teclado = new Scanner(System.in);
-		
+
 		System.out.println("Indica un nro. entero");
 		int entero = teclado.nextInt();
 		teclado.close();
-		
-		boolean esPar = entero % 2 == 0 ? true : false;
-		boolean esMayor50 = entero > 50 ? true : false;
+
+		boolean esPar = entero % 2 == 0;
+		boolean esMayor = entero > 50;
 
 		System.out.println("Escribe un entero entre 0 y 100: " + entero);
 		System.out.println("Par: " + esPar);
-		System.out.println("Mayor que 50: " + esMayor50);
+		System.out.println("Mayor que 50: " + esMayor);
 	}
 
 }
