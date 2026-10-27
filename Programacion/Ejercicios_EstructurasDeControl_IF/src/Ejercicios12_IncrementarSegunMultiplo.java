@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Ejercicios12_IncrementarSegunMultiplo {
+
+	public static void main(String[] args) {
+		/*
+		 * Leer un número entero, se realizarán las siguientes acciones:
+		 * 
+		 * - incrementará en 2 unidades si es par - en 3 unidades si es múltiplo de 3 -
+		 * en 5 unidades si es múltiplo de 5 - en el caso de no cumplirse ninguna de las
+		 * anteiores, se incrementará en una unidad.
+		 * 
+		 * Sólo se realiza un incremento.
+		 * 
+		 * Mostrar por consola el valor del número obtenido
+		 */
+
+		Scanner teclado = new Scanner(System.in);
+
+		int numero = teclado.nextInt();
+
+		if (numero % 2 == 0) {
+			numero += 2;
+		} else if (numero % 3 == 0) {
+			numero += 3;
+		} else if (numero % 5 == 0) {
+			numero += 5;
+		} else {
+			numero++;
+		}
+
+		System.out.println(numero);
+
+		teclado.close();
+	}
+
+}
