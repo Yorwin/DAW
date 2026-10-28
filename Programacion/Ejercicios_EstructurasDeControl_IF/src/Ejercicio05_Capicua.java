@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ejercico05_Capicua {
+public class Ejercicio05_Capicua {
 
 	public static void main(String[] args) {
 		/*

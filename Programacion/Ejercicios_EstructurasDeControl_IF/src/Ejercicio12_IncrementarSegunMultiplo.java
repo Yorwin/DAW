@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ejercicios12_IncrementarSegunMultiplo {
+public class Ejercicio12_IncrementarSegunMultiplo {
 
 	public static void main(String[] args) {
 		/*
