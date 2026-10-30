@@ -19,27 +19,35 @@ public class Ejercicio08_Operacion {
 		System.out.println("Indicanos dos nros. que usar en la operación");
 		int primerNro = teclado.nextInt();
 		int segundoNro = teclado.nextInt();
-		int resultado;
+		int resultado = 0;
+		String tipoDeOperacion = "";
 
 		switch (operacion) {
 		case '+':
 			resultado = primerNro + segundoNro;
-			System.out.printf("La suma de %d y %d es %d", primerNro, segundoNro, resultado);
+			tipoDeOperacion = "suma";
 			break;
 		case '-':
 			resultado = primerNro - segundoNro;
-			System.out.printf("La resta de %d y %d es %d", primerNro, segundoNro, resultado);
+			tipoDeOperacion = "resta";
 			break;
 		case '*':
 			resultado = primerNro * segundoNro;
-			System.out.printf("La multiplicación de %d y %d es %d", primerNro, segundoNro, resultado);
+			tipoDeOperacion = "multiplicacion";
 			break;
 		case '/':
+			if (primerNro == 0 || segundoNro == 0)
+				resultado = 0;
+
 			resultado = primerNro / segundoNro;
-			System.out.printf("La división de %d y %d es %d", primerNro, segundoNro, resultado);
+			tipoDeOperacion = "division";
 			break;
 		default:
 			System.out.println("La operación que has indicado no es válida, recuerda que tiene que ser +,-,* o /");
+		}
+
+		if (tipoDeOperacion.length() > 0) {
+			System.out.printf("La %s de %d y %d es %d", tipoDeOperacion, primerNro, segundoNro, resultado);
 		}
 
 		teclado.close();

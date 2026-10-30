@@ -3,27 +3,32 @@ import java.util.Scanner;
 public class Ejercicio17_Factorial {
 
 	public static void main(String[] args) {
-		/*
-		 * Calcular el factorial de un número entre 0 y 20. El factorial de un número se
-		 * define del siguiente modo: F(0) = 1; F(1) = 1; F(n) = n(n-1)(n-2) ... 1
-		 * siendo n>1. (Factorial)
-		 */
 
 		Scanner teclado = new Scanner(System.in);
 
+		System.out.println("Indicame un nro. cuyo factorial quieras calcular");
 		int numero = teclado.nextInt();
-		int factorial = numero;
+
+		int factorial = 1;
+
 		teclado.close();
 
-		for (int i = numero - 1; i > 0; i--) {
-			if (numero == 1 || numero == 0) {
-				factorial = 1;
+		System.out.println("Calculando " + numero + "!");
+
+		for (int i = numero; i > 0; i--) {
+
+			if (i != 1) {
+				System.out.printf("%dx", i);
+			} else {
+				System.out.printf("%d", i);
 			}
 
-			factorial *= i;
+			if (numero != 1 && numero != 0) {
+				factorial *= i;
+			}
+
 		}
 
-		System.out.printf("F(%d) = %d", numero, factorial);
+		System.out.printf("\nF(%d) = %d", numero, factorial);
 	}
-
 }
