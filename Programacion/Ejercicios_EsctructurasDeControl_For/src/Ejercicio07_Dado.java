@@ -20,30 +20,28 @@ public class Ejercicio07_Dado {
 		if (nroLanzamientos <= 0)
 			nroLanzamientos = 100;
 
-		int vecesUno = 0;
-		int vecesDos = 0;
-		int vecesTres = 0;
-		int vecesCuatro = 0;
-		int vecesCinco = 0;
-		int vecesSeis = 0;
+		int vecesUno = 0, vecesDos = 0, vecesTres = 0, vecesCuatro = 0, vecesCinco = 0, vecesSeis = 0;
 
 		// Manejo lanzamientos
 		for (int i = 0; i < nroLanzamientos; i++) {
 			int resultadoLanzamiento = lanzamientoDado();
 
-			if (resultadoLanzamiento == 1) {
-				vecesUno++;
-			} else if (resultadoLanzamiento == 2) {
-				vecesDos++;
-			} else if (resultadoLanzamiento == 3) {
-				vecesTres++;
-			} else if (resultadoLanzamiento == 4) {
-				vecesCuatro++;
-			} else if (resultadoLanzamiento == 5) {
-				vecesCinco++;
-			} else if (resultadoLanzamiento == 6) {
-				vecesSeis++;
+			switch (resultadoLanzamiento) {
+			case 1 -> vecesUno++;
+			case 2 -> vecesDos++;
+			case 3 -> vecesTres++;
+			case 4 -> vecesCuatro++;
+			case 5 -> vecesCinco++;
+			case 6 -> vecesSeis++;
 			}
+
+			/*
+			 * Haciendolo con el if. if (resultadoLanzamiento == 1) { vecesUno++; } else if
+			 * (resultadoLanzamiento == 2) { vecesDos++; } else if (resultadoLanzamiento ==
+			 * 3) { vecesTres++; } else if (resultadoLanzamiento == 4) { vecesCuatro++; }
+			 * else if (resultadoLanzamiento == 5) { vecesCinco++; } else if
+			 * (resultadoLanzamiento == 6) { vecesSeis++; }
+			 */
 
 		}
 
