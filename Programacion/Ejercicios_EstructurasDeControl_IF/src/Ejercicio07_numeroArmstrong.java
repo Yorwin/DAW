@@ -22,14 +22,21 @@ public class Ejercicio07_numeroArmstrong {
 
 		if (String.valueOf(numero).length() == 3) {
 
-			int ultimoDigito = numero % 10;
-			int nroDosDigitos = numero / 10;
-			int penultimoDigito = nroDosDigitos % 10;
-			int primerDigito = nroDosDigitos / 10;
+			/*
+			 * Podría hacerlo de este modo si quiere utilizar más tarde el resultado
+			 * intermedio de cada división: int ultimoDigito = numero % 10; int
+			 * nroDosDigitos = numero / 10; int penultimoDigito = nroDosDigitos % 10; int
+			 * primerDigito = nroDosDigitos / 10;
+			 */
 
-			int primerNumeroElevado = (int) Math.pow(primerDigito, maximoNumeroCifras);
-			int segundoNumeroElevado = (int) Math.pow(penultimoDigito, maximoNumeroCifras);
-			int tercerNumeroElevado = (int) Math.pow(ultimoDigito, maximoNumeroCifras);
+			// Forma más corta.
+			int centenas = numero / 100;
+			int decenas = (numero / 10) % 10;
+			int unidades = numero % 10;
+
+			int primerNumeroElevado = (int) Math.pow(centenas, maximoNumeroCifras);
+			int segundoNumeroElevado = (int) Math.pow(decenas, maximoNumeroCifras);
+			int tercerNumeroElevado = (int) Math.pow(unidades, maximoNumeroCifras);
 
 			if (numero == (primerNumeroElevado + segundoNumeroElevado + tercerNumeroElevado)) {
 				System.out.println("Es un número Armstrong");
