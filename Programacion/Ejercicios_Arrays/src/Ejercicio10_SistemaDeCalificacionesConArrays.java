@@ -28,6 +28,8 @@ public class Ejercicio10_SistemaDeCalificacionesConArrays {
 			nroNota++;
 		}
 
+		teclado.close();
+
 		double sumaCalificaciones = 0.0;
 		int estudiantesAprobados = 0;
 		double notaAlta = 0;
